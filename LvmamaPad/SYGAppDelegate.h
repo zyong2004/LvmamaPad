@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRLayeredNavigation.h"
 
-@class SYGViewController;
+@class SYGHomeViewController;
 
 @interface SYGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) SYGViewController *viewController;
+@property (strong, nonatomic) SYGHomeViewController *viewController;
 
 @end

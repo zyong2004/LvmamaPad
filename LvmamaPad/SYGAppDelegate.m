@@ -8,7 +8,7 @@
 
 #import "SYGAppDelegate.h"
 
-#import "SYGViewController.h"
+#import "SYGHomeViewController.h"
 
 @implementation SYGAppDelegate
 
@@ -16,8 +16,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[SYGViewController alloc] initWithNibName:@"SYGViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    
+    UIViewController *vc = [[SYGHomeViewController alloc] init];
+    FRLayeredNavigationController *fvc = [[FRLayeredNavigationController alloc]
+                                          initWithRootViewController:vc
+                                          configuration:^(FRLayeredNavigationItem *item) {
+                                              item.width = 1024; //600;
+                                              item.nextItemDistance = 104; //2;
+                                          }];
+    self.window.rootViewController = fvc;
+    self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

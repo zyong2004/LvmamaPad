@@ -1,5 +1,5 @@
 //
-//  SYGViewController.h
+//  SYGPaoViewController.h
 //  LvmamaPad
 //
 //  Created by dacaiguoguo on 13-8-5.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SYGViewController : UIViewController
+@interface SYGPaoViewController : UIViewController
+- (IBAction)fanhui:(id)sender;
 
 @end
