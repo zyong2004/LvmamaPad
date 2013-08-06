@@ -1,19 +1,18 @@
 //
-//  SYGPaoViewController.m
+//  SYGHoViewController.m
 //  LvmamaPad
 //
-//  Created by dacaiguoguo on 13-8-5.
+//  Created by dacaiguoguo on 13-8-6.
 //  Copyright (c) 2013年 dacaiguoguo. All rights reserved.
 //
 
-#import "SYGPaoViewController.h"
-#import "FRLayeredNavigation.h"
+#import "SYGHoViewController.h"
 
-@interface SYGPaoViewController ()
+@interface SYGHoViewController ()
 
 @end
 
-@implementation SYGPaoViewController
+@implementation SYGHoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, 1000);
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -35,10 +35,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)abctest{
 
-}
-- (IBAction)fanhui:(id)sender {
-    [self.layeredNavigationController popViewControllerAnimated:YES];
+- (void)viewDidUnload {
+    [self setScrollView:nil];
+    [super viewDidUnload];
 }
 @end

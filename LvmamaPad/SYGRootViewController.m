@@ -1,19 +1,20 @@
 //
-//  SYGPaoViewController.m
+//  SYGRootViewController.m
 //  LvmamaPad
 //
-//  Created by dacaiguoguo on 13-8-5.
+//  Created by dacaiguoguo on 13-8-6.
 //  Copyright (c) 2013年 dacaiguoguo. All rights reserved.
 //
 
-#import "SYGPaoViewController.h"
+#import "SYGRootViewController.h"
+#import "SYGHoViewController.h"
 #import "FRLayeredNavigation.h"
 
-@interface SYGPaoViewController ()
+@interface SYGRootViewController ()
 
 @end
 
-@implementation SYGPaoViewController
+@implementation SYGRootViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    SYGHoViewController *hovc = [[SYGHoViewController alloc] initWithNibName:@"SYGHoViewController" bundle:nil];
+    [self.contentView addSubview:hovc.view];
+
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -35,10 +39,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)abctest{
 
-}
-- (IBAction)fanhui:(id)sender {
-    [self.layeredNavigationController popViewControllerAnimated:YES];
+- (void)viewDidUnload {
+    [self setContentView:nil];
+    [super viewDidUnload];
 }
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A813AFC517B08712000AC589 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A813AFC417B08712000AC589 /* Crashlytics.framework */; };
+		A813AFCE17B09CB0000AC589 /* SYGRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A813AFCC17B09CB0000AC589 /* SYGRootViewController.m */; };
+		A813AFCF17B09CB0000AC589 /* SYGRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A813AFCD17B09CB0000AC589 /* SYGRootViewController.xib */; };
+		A813AFD317B09DC6000AC589 /* SYGHoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A813AFD117B09DC6000AC589 /* SYGHoViewController.m */; };
+		A813AFD417B09DC6000AC589 /* SYGHoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A813AFD217B09DC6000AC589 /* SYGHoViewController.xib */; };
 		A84AE61717AF9DB500DD4DAA /* 专题首页展示.png in Resources */ = {isa = PBXBuildFile; fileRef = A84AE61117AF9DB500DD4DAA /* 专题首页展示.png */; };
 		A84AE61817AF9DB500DD4DAA /* 更多详情展示.png in Resources */ = {isa = PBXBuildFile; fileRef = A84AE61217AF9DB500DD4DAA /* 更多详情展示.png */; };
 		A84AE61917AF9DB500DD4DAA /* 游客评论展示.png in Resources */ = {isa = PBXBuildFile; fileRef = A84AE61317AF9DB500DD4DAA /* 游客评论展示.png */; };
@@ -24,13 +29,18 @@
 		A85F1B0417AF98930023528D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A85F1B0317AF98930023528D /* Default.png */; };
 		A85F1B0617AF98930023528D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A85F1B0517AF98930023528D /* Default@2x.png */; };
 		A85F1B0817AF98930023528D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A85F1B0717AF98930023528D /* Default-568h@2x.png */; };
-		A85F1B0B17AF98930023528D /* SYGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85F1B0A17AF98930023528D /* SYGHomeViewController.m */; };
-		A85F1B0E17AF98930023528D /* SYGHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85F1B0C17AF98930023528D /* SYGHomeViewController.xib */; };
 		F938FA41672242B5B808F382 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D635415F2AB641B9AA540F32 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83033D4B70264B029006872B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		A813AFC417B08712000AC589 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		A813AFCB17B09CB0000AC589 /* SYGRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGRootViewController.h; sourceTree = "<group>"; };
+		A813AFCC17B09CB0000AC589 /* SYGRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGRootViewController.m; sourceTree = "<group>"; };
+		A813AFCD17B09CB0000AC589 /* SYGRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYGRootViewController.xib; sourceTree = "<group>"; };
+		A813AFD017B09DC5000AC589 /* SYGHoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGHoViewController.h; sourceTree = "<group>"; };
+		A813AFD117B09DC6000AC589 /* SYGHoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGHoViewController.m; sourceTree = "<group>"; };
+		A813AFD217B09DC6000AC589 /* SYGHoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYGHoViewController.xib; sourceTree = "<group>"; };
 		A84AE61117AF9DB500DD4DAA /* 专题首页展示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "专题首页展示.png"; sourceTree = "<group>"; };
 		A84AE61217AF9DB500DD4DAA /* 更多详情展示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多详情展示.png"; sourceTree = "<group>"; };
 		A84AE61317AF9DB500DD4DAA /* 游客评论展示.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游客评论展示.png"; sourceTree = "<group>"; };
@@ -53,9 +63,6 @@
 		A85F1B0317AF98930023528D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A85F1B0517AF98930023528D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A85F1B0717AF98930023528D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A85F1B0917AF98930023528D /* SYGHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGHomeViewController.h; sourceTree = "<group>"; };
-		A85F1B0A17AF98930023528D /* SYGHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGHomeViewController.m; sourceTree = "<group>"; };
-		A85F1B0D17AF98930023528D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SYGHomeViewController.xib; sourceTree = "<group>"; };
 		D635415F2AB641B9AA540F32 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +75,7 @@
 				A85F1AF417AF98930023528D /* Foundation.framework in Frameworks */,
 				A85F1AF617AF98930023528D /* CoreGraphics.framework in Frameworks */,
 				F938FA41672242B5B808F382 /* libPods.a in Frameworks */,
+				A813AFC517B08712000AC589 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +116,7 @@
 		A85F1AF017AF98930023528D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A813AFC417B08712000AC589 /* Crashlytics.framework */,
 				A85F1AF117AF98930023528D /* UIKit.framework */,
 				A85F1AF317AF98930023528D /* Foundation.framework */,
 				A85F1AF517AF98930023528D /* CoreGraphics.framework */,
@@ -122,9 +131,12 @@
 				A84AE61017AF9DB500DD4DAA /* 效果图 */,
 				A85F1B0017AF98930023528D /* SYGAppDelegate.h */,
 				A85F1B0117AF98930023528D /* SYGAppDelegate.m */,
-				A85F1B0917AF98930023528D /* SYGHomeViewController.h */,
-				A85F1B0A17AF98930023528D /* SYGHomeViewController.m */,
-				A85F1B0C17AF98930023528D /* SYGHomeViewController.xib */,
+				A813AFCB17B09CB0000AC589 /* SYGRootViewController.h */,
+				A813AFCC17B09CB0000AC589 /* SYGRootViewController.m */,
+				A813AFCD17B09CB0000AC589 /* SYGRootViewController.xib */,
+				A813AFD017B09DC5000AC589 /* SYGHoViewController.h */,
+				A813AFD117B09DC6000AC589 /* SYGHoViewController.m */,
+				A813AFD217B09DC6000AC589 /* SYGHoViewController.xib */,
 				A84AE61D17AF9FF700DD4DAA /* SYGPaoViewController.h */,
 				A84AE61E17AF9FF700DD4DAA /* SYGPaoViewController.m */,
 				A84AE61F17AF9FF700DD4DAA /* SYGPaoViewController.xib */,
@@ -159,6 +171,7 @@
 				A85F1AEB17AF98930023528D /* Frameworks */,
 				A85F1AEC17AF98930023528D /* Resources */,
 				87F43CA72B07442196B644BC /* Copy Pods Resources */,
+				A813AFC317B086E3000AC589 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -205,7 +218,6 @@
 				A85F1B0417AF98930023528D /* Default.png in Resources */,
 				A85F1B0617AF98930023528D /* Default@2x.png in Resources */,
 				A85F1B0817AF98930023528D /* Default-568h@2x.png in Resources */,
-				A85F1B0E17AF98930023528D /* SYGHomeViewController.xib in Resources */,
 				A84AE61717AF9DB500DD4DAA /* 专题首页展示.png in Resources */,
 				A84AE61817AF9DB500DD4DAA /* 更多详情展示.png in Resources */,
 				A84AE61917AF9DB500DD4DAA /* 游客评论展示.png in Resources */,
@@ -213,6 +225,8 @@
 				A84AE61B17AF9DB500DD4DAA /* 门票详情展示(全）.png in Resources */,
 				A84AE61C17AF9DB500DD4DAA /* 门票详情展示.png in Resources */,
 				A84AE62117AF9FF700DD4DAA /* SYGPaoViewController.xib in Resources */,
+				A813AFCF17B09CB0000AC589 /* SYGRootViewController.xib in Resources */,
+				A813AFD417B09DC6000AC589 /* SYGHoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +263,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A813AFC317B086E3000AC589 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 687e4b9848f6d8fca88c57bbd31a0446414d29d3";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,8 +285,9 @@
 			files = (
 				A85F1AFE17AF98930023528D /* main.m in Sources */,
 				A85F1B0217AF98930023528D /* SYGAppDelegate.m in Sources */,
-				A85F1B0B17AF98930023528D /* SYGHomeViewController.m in Sources */,
 				A84AE62017AF9FF700DD4DAA /* SYGPaoViewController.m in Sources */,
+				A813AFCE17B09CB0000AC589 /* SYGRootViewController.m in Sources */,
+				A813AFD317B09DC6000AC589 /* SYGHoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +300,6 @@
 				A85F1AFB17AF98930023528D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A85F1B0C17AF98930023528D /* SYGHomeViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A85F1B0D17AF98930023528D /* en */,
-			);
-			name = SYGHomeViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,6 +367,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83033D4B70264B029006872B /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LvmamaPad/LvmamaPad-Prefix.pch";
 				INFOPLIST_FILE = "LvmamaPad/LvmamaPad-Info.plist";
@@ -360,6 +384,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83033D4B70264B029006872B /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LvmamaPad/LvmamaPad-Prefix.pch";
 				INFOPLIST_FILE = "LvmamaPad/LvmamaPad-Info.plist";

@@ -8,22 +8,24 @@
 
 #import "SYGAppDelegate.h"
 
-#import "SYGHomeViewController.h"
-
+#import "SYGRootViewController.h"
+#import <Crashlytics/Crashlytics.h>
 @implementation SYGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    [Crashlytics startWithAPIKey:@"687e4b9848f6d8fca88c57bbd31a0446414d29d3"];
     
-    UIViewController *vc = [[SYGHomeViewController alloc] init];
+    UIViewController *vc = [[SYGRootViewController alloc] init];
     FRLayeredNavigationController *fvc = [[FRLayeredNavigationController alloc]
                                           initWithRootViewController:vc
                                           configuration:^(FRLayeredNavigationItem *item) {
                                               item.width = 1024; //600;
                                               item.nextItemDistance = 104; //2;
                                           }];
+    fvc.dropLayersWhenPulledRight = YES;
     self.window.rootViewController = fvc;
     self.window.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     [self.window makeKeyAndVisible];
